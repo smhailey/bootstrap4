@@ -9,10 +9,36 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 bg-secondary">
+        <div class="p-3 mb-2 text-blue text-center">&#9786;</div>
+        <!-- No nesting here -->
+      </div>
+      <div class="col-sm-9 bg-secondary">
+        <!-- Here we nest two rows -->
+        <div class="row">
+          <!-- A first one with two cols -->
+          <div class="col-sm-6 bg-secondary">
+            <div class="p-3 mb-2 text-blue text-center">&#9786;</div>
+          </div>
+          <div class="col-sm-6 bg-secondary">
+            <div class="p-3 mb-2 text-blue text-center">&#9786;</div>
+          </div>
+        </div>
+        <div class="row">
+          <!-- A second one with just one col -->
+          <div class="col-sm-12 bg-secondary">
+            <div class="p-3 mb-2 text-blue text-center">&#9786;</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 </body>
 
