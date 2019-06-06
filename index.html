@@ -12,34 +12,80 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-sm-3 bg-secondary">
-        <div class="p-3 mb-2 text-blue text-center">&#9786;</div>
-        <!-- No nesting here -->
+      <div class="col-12">
+        <h1 class="text-center">Two grid tricks</h1>
       </div>
-      <div class="col-sm-9 bg-secondary">
-        <!-- Here we nest two rows -->
-        <div class="row">
-          <!-- A first one with two cols -->
-          <div class="col-sm-6 bg-secondary">
-            <div class="p-3 mb-2 text-blue text-center">&#9786;</div>
-          </div>
-          <div class="col-sm-6 bg-secondary">
-            <div class="p-3 mb-2 text-blue text-center">&#9786;</div>
+      <div class="col-12">
+        <h5 class="text-center">Wrapper <b>around</b> .container or cards <b>inside</b> .col</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-primary">
+    <div class="col-12">
+      <h5 class="text-center text-white">Wrapper <b>around</b> .container</h5>
+    </div>
+    <div class="col-12">
+      <div class="row">
+        <div class="col-6">
+          <h5 class="text-center text-white">One</h5>
+        </div>
+        <div class="col-6">
+          <h5 class="text-center text-white">One</h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <p class="text-center text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, esse.
+            Odit
+            doloribus quam enim, veritatis minus aliquid pariatur tempora reprehenderit.<p>
+        </div>
+        <div class="col-6">
+          <p class="text-center text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, esse.
+            Odit
+            doloribus quam enim, veritatis minus aliquid pariatur tempora reprehenderit.<p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-secondary">
+    <h5 class="text-center">Cards <b>inside</b> .col</h5>
+    <div class="row">
+      <div class="col-6">
+        <div class="card mx-auto" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Three</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi quam labore
+              laudantium impedit similique blanditiis totam consequuntur libero doloribus beatae. Reprehenderit, nemo.
+            </p>
+
           </div>
         </div>
-        <div class="row">
-          <!-- A second one with just one col -->
-          <div class="col-sm-12 bg-secondary">
-            <div class="p-3 mb-2 text-blue text-center">&#9786;</div>
+      </div>
+      <div class="col-6">
+        <div class="card mx-auto" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Four</h5>
+            <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi quam
+              labore
+              laudantium impedit similique blanditiis
+              totam consequuntur libero doloribus beatae. Reprehenderit, nemo.
+            </p>
+
           </div>
         </div>
       </div>
     </div>
   </div>
 
-
+  <div class="col-12 col-md-6">
+    <div class="card-white">
+      <!-- card content -->
+    </div>
+  </div>
 </body>
 
 </html>
